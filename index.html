@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>测一测，你是哪种“精神状态”人设？</title>
+  <meta name="description" content="32 道抽象生活题，3 分钟测出你的精神状态人设：浓人、淡人、疯感乐子人、松弛感大师……共 10 种，看看你是哪一款。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 首页 -->
+  <section class="screen" id="screen-home">
+    <div class="hero">
+      <div class="hero-badges" id="hero-badges" aria-hidden="true"></div>
+      <p class="hero-kicker">全网都在测的精神状态鉴定</p>
+      <h1 class="hero-title">测一测，你是哪种<br>「精神状态」人设？</h1>
+      <p class="hero-sub">32 道抽象生活题，专测你的精神状态浓度。<br>浓人还是淡人？乐子人还是清醒人？测完直接把结果甩给朋友。</p>
+      <div class="hero-meta">
+        <span>32 道趣味单选</span>
+        <span>约 3 分钟</span>
+        <span>10 种人设</span>
+      </div>
+      <button type="button" class="btn btn-start" id="btn-start">开始鉴定我的精神状态</button>
+      <button type="button" class="btn btn-ghost" id="btn-resume" hidden>继续上次答题</button>
+      <p class="hero-note">本测试纯属娱乐，玩梗全部为正向自嘲，不涉及任何心理评估。</p>
+    </div>
+
+    <div class="persona-preview">
+      <h2 class="block-title">10 款人设，总有一款是你</h2>
+      <div class="persona-grid" id="persona-grid"></div>
+    </div>
+  </section>
+
+  <!-- 答题页 -->
+  <section class="screen" id="screen-quiz" hidden>
+    <div class="quiz-top">
+      <button type="button" class="btn-back" id="btn-back" aria-label="回到上一题">‹ 上一题</button>
+      <div class="progress-track" role="progressbar" aria-label="答题进度" aria-valuemin="0" aria-valuemax="100" id="quiz-progress">
+        <div class="progress-fill" id="quiz-progress-fill"></div>
+      </div>
+      <span class="progress-count" id="quiz-count">1/32</span>
+    </div>
+    <div class="quiz-body" id="quiz-body"></div>
+    <p class="quiz-skip"><button type="button" class="btn-text" id="btn-quit">不测了，回首页</button></p>
+  </section>
+
+  <!-- 结果页 -->
+  <section class="screen" id="screen-result" hidden>
+    <div id="result-body"></div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">纯娱乐向精神状态小测试 · 玩梗皆为正向自嘲 · 结果不代表任何专业评估</div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/art.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
